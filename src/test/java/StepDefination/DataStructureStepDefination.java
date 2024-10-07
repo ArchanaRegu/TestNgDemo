@@ -31,7 +31,7 @@ public class DataStructureStepDefination extends Parent{
 	    String validcode=excelnew.getData(1, 2);
 		datastructpage.enter_valideditor(validcode);
 		System.out.println(datastructpage.Output());
-			
+		testcontextsetup.testbase.WebDriverManager().quit();	
 	}
 	
 		}
