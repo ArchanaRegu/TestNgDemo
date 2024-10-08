@@ -16,15 +16,15 @@ public class GraphsStepDefinition extends Parent {
 
 	@Test(dataProvider = "Graphsdatapro",dataProviderClass = DataproviderSupplier.class)
 	public void graphs_Topic(String[] validInvalidcode) throws Exception {
-		graphsPageObjects.get_Title();
 		graphsPageObjects.click_graphsGetStarted();
 	   	graphsPageObjects.scroll_topicscovered();
 	    System.out.println("actaual list:"+graphsPageObjects.graph_topicsDisplayed());
 	    String graphTopics="Graph";
 	    graphsPageObjects.clickGraphsListLinks(graphTopics);
+	    String title= graphsPageObjects.get_Title();
 	    arraysdocpage.click_Tryhere_btn();
 		//User Enters valid code in editorpage
-	    System.out.println(validInvalidcode[3]+"code =");
+	    System.out.println(title+": "+validInvalidcode[3]+"code ="+validInvalidcode[2]);
 		datastructpage.enter_valideditor(validInvalidcode[2]);
 		//click run button and capture output
 		System.out.println("output : "+datastructpage.Output());
@@ -32,15 +32,15 @@ public class GraphsStepDefinition extends Parent {
     }
 	@Test(dataProvider = "Graphsdatapro",dataProviderClass = DataproviderSupplier.class)
 	public void Graph_Representation(String[] validInvalidcode) throws Exception {
-		graphsPageObjects.get_Title();
 		graphsPageObjects.click_graphsGetStarted();
 	   	graphsPageObjects.scroll_topicscovered();
 	    System.out.println("actaual list:"+graphsPageObjects.graph_topicsDisplayed());
 	    String graphTopics="Graph Representations";
 	    graphsPageObjects.clickGraphsListLinks(graphTopics);
+	    String title= graphsPageObjects.get_Title();
 	    arraysdocpage.click_Tryhere_btn();
 		//User Enters valid code in editorpage
-	    System.out.println(validInvalidcode[3]+"code for "+graphTopics+" is:");
+	    System.out.println(title+": "+validInvalidcode[3]+",code for "+validInvalidcode[2]+" is:");
 		datastructpage.enter_valideditor(validInvalidcode[2]);
 		//click run button and capture output
 		System.out.println("output : "+datastructpage.Output());

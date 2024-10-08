@@ -21,17 +21,20 @@ import Utils.TestContextSetup;
 import io.cucumber.java.en.Then;
 public class DataStructureStepDefination extends Parent{
 	
-	@Test(priority=1)
+	@Test(dataProvider = "Graphsdatapro",dataProviderClass = DataproviderSupplier.class)
 	//@Given("Click  GetStarted button of Data Structures-Introduction pane.")
-	public void Dspage() throws IOException {
+	public void Dspage(String[] validInvalidcode) throws IOException {
 		System.out.println("This is from datastructure"+Thread.currentThread().getName());
 		datastructpage.click_DSgetstart();
 		Assert.assertTrue(datastructpage.topic_displayed());
 	    datastructpage.click_timecomplex();
-	    String validcode=excelnew.getData(1, 2);
-		datastructpage.enter_valideditor(validcode);
-		System.out.println(datastructpage.Output());
-		testcontextsetup.testbase.WebDriverManager().quit();	
+	    String title=datastructpage.get_Title();
+	    System.out.println(title+": "+validInvalidcode[3]+"code ="+validInvalidcode[2]);
+		datastructpage.click_tryhere();
+	    datastructpage.enter_valideditor(validInvalidcode[2]);
+		//click run button and capture output
+		System.out.println("output : "+datastructpage.Output());
+		testcontextsetup.testbase.WebDriverManager().quit();
 	}
 	
 		}

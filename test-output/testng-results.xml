@@ -1,25 +1,299 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="39" passed="39" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-07T19:24:07 IST" name="Suite" finished-at="2024-10-07T19:26:04 IST" duration-ms="117080">
+  <suite started-at="2024-10-08T07:36:25 IST" name="Suite" finished-at="2024-10-08T07:41:59 IST" duration-ms="333075">
     <groups>
     </groups>
-    <test started-at="2024-10-07T19:24:07 IST" name="Test" finished-at="2024-10-07T19:26:04 IST" duration-ms="117080">
-      <class name="StepDefination.ArraysDocPageStepDefination">
-        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:StepDefination.ArraysDocPageStepDefination@38af9828]" started-at="2024-10-07T19:24:07 IST" name="BeforeSuite" finished-at="2024-10-07T19:24:07 IST" duration-ms="19" status="PASS">
+    <test started-at="2024-10-08T07:36:25 IST" name="Test1" finished-at="2024-10-08T07:36:40 IST" duration-ms="14145">
+      <class name="StepDefination.HomepageStepDefination">
+        <test-method signature="callingObjects()[pri:1, instance:StepDefination.HomepageStepDefination@1e16c0aa]" started-at="2024-10-08T07:36:26 IST" name="callingObjects" finished-at="2024-10-08T07:36:33 IST" duration-ms="7872" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BeforeSuite -->
-        <test-method is-config="true" signature="BeforeScenario1()[pri:0, instance:StepDefination.ArraysDocPageStepDefination@38af9828]" started-at="2024-10-07T19:24:07 IST" name="BeforeScenario1" finished-at="2024-10-07T19:24:07 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- callingObjects -->
+        <test-method signature="Homepage(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:StepDefination.HomepageStepDefination@1e16c0aa]" started-at="2024-10-08T07:36:36 IST" name="Homepage" data-provider="Registationdatapro" finished-at="2024-10-08T07:36:39 IST" duration-ms="3509" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nirvana]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[archanachaya]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[print("helloSelenium")]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Homepage -->
+        <test-method signature="quitmethod()[pri:3, instance:StepDefination.HomepageStepDefination@1e16c0aa]" started-at="2024-10-08T07:36:39 IST" name="quitmethod" finished-at="2024-10-08T07:36:40 IST" duration-ms="543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitmethod -->
+      </class> <!-- StepDefination.HomepageStepDefination -->
+    </test> <!-- Test1 -->
+    <test started-at="2024-10-08T07:36:40 IST" name="Test2" finished-at="2024-10-08T07:41:04 IST" duration-ms="264550">
+      <class name="StepDefination.QueuesStepDefinition">
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.QueuesStepDefinition@31edaa7d]" started-at="2024-10-08T07:36:40 IST" name="username_password" finished-at="2024-10-08T07:36:58 IST" duration-ms="18721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- username_password -->
+        <test-method signature="username_password()[pri:0, instance:StepDefination.QueuesStepDefinition@31edaa7d]" started-at="2024-10-08T07:36:58 IST" name="username_password" finished-at="2024-10-08T07:37:10 IST" duration-ms="11141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- username_password -->
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.QueuesStepDefinition@31edaa7d]" started-at="2024-10-08T07:37:10 IST" name="username_password" finished-at="2024-10-08T07:37:22 IST" duration-ms="12322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- username_password -->
+        <test-method signature="queues_pane([Ljava.lang.String;)[pri:0, instance:StepDefination.QueuesStepDefinition@31edaa7d]" started-at="2024-10-08T07:37:22 IST" name="queues_pane" data-provider="Topics" finished-at="2024-10-08T07:37:45 IST" duration-ms="23374" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@6d099323]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- queues_pane -->
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.QueuesStepDefinition@31edaa7d]" started-at="2024-10-08T07:37:45 IST" name="username_password" finished-at="2024-10-08T07:37:58 IST" duration-ms="12440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- username_password -->
+        <test-method signature="queues_pane([Ljava.lang.String;)[pri:0, instance:StepDefination.QueuesStepDefinition@31edaa7d]" started-at="2024-10-08T07:37:58 IST" name="queues_pane" data-provider="Topics" finished-at="2024-10-08T07:38:21 IST" duration-ms="22818" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@1756f7cc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- queues_pane -->
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.QueuesStepDefinition@31edaa7d]" started-at="2024-10-08T07:38:21 IST" name="username_password" finished-at="2024-10-08T07:38:32 IST" duration-ms="11018" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- username_password -->
+        <test-method signature="queues_pane([Ljava.lang.String;)[pri:0, instance:StepDefination.QueuesStepDefinition@31edaa7d]" started-at="2024-10-08T07:38:32 IST" name="queues_pane" data-provider="Topics" finished-at="2024-10-08T07:38:45 IST" duration-ms="12888" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@5d7399f9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- queues_pane -->
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.QueuesStepDefinition@31edaa7d]" started-at="2024-10-08T07:38:45 IST" name="username_password" finished-at="2024-10-08T07:38:56 IST" duration-ms="11708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- username_password -->
+        <test-method signature="queues_pane([Ljava.lang.String;)[pri:0, instance:StepDefination.QueuesStepDefinition@31edaa7d]" started-at="2024-10-08T07:38:56 IST" name="queues_pane" data-provider="Topics" finished-at="2024-10-08T07:39:09 IST" duration-ms="12729" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@34c70b5e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- queues_pane -->
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.QueuesStepDefinition@31edaa7d]" started-at="2024-10-08T07:39:09 IST" name="username_password" finished-at="2024-10-08T07:39:23 IST" duration-ms="13717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- username_password -->
+        <test-method signature="queues_paneIn([Ljava.lang.String;)[pri:0, instance:StepDefination.QueuesStepDefinition@31edaa7d]" started-at="2024-10-08T07:39:23 IST" name="queues_paneIn" data-provider="Topics" finished-at="2024-10-08T07:39:42 IST" duration-ms="19400" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@4a3bd45b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- queues_paneIn -->
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.QueuesStepDefinition@31edaa7d]" started-at="2024-10-08T07:39:42 IST" name="username_password" finished-at="2024-10-08T07:39:53 IST" duration-ms="10484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- username_password -->
+        <test-method signature="queues_paneIn([Ljava.lang.String;)[pri:0, instance:StepDefination.QueuesStepDefinition@31edaa7d]" started-at="2024-10-08T07:39:53 IST" name="queues_paneIn" data-provider="Topics" finished-at="2024-10-08T07:39:59 IST" duration-ms="6536" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@4ecd00b5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- queues_paneIn -->
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.QueuesStepDefinition@31edaa7d]" started-at="2024-10-08T07:39:59 IST" name="username_password" finished-at="2024-10-08T07:40:11 IST" duration-ms="11307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- username_password -->
+        <test-method signature="queues_paneIn([Ljava.lang.String;)[pri:0, instance:StepDefination.QueuesStepDefinition@31edaa7d]" started-at="2024-10-08T07:40:11 IST" name="queues_paneIn" data-provider="Topics" finished-at="2024-10-08T07:40:19 IST" duration-ms="8133" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@10947c4e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- queues_paneIn -->
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.QueuesStepDefinition@31edaa7d]" started-at="2024-10-08T07:40:19 IST" name="username_password" finished-at="2024-10-08T07:40:28 IST" duration-ms="8742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- username_password -->
+        <test-method signature="queues_paneIn([Ljava.lang.String;)[pri:0, instance:StepDefination.QueuesStepDefinition@31edaa7d]" started-at="2024-10-08T07:40:28 IST" name="queues_paneIn" data-provider="Topics" finished-at="2024-10-08T07:40:37 IST" duration-ms="9575" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@3667faa8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- queues_paneIn -->
+      </class> <!-- StepDefination.QueuesStepDefinition -->
+      <class name="StepDefination.DataStructureStepDefination">
+        <test-method is-config="true" signature="BeforeScenario1()[pri:0, instance:StepDefination.DataStructureStepDefination@15a04efb]" started-at="2024-10-08T07:36:40 IST" name="BeforeScenario1" finished-at="2024-10-08T07:36:40 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeScenario1 -->
-        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.ArraysDocPageStepDefination@38af9828]" started-at="2024-10-07T19:24:07 IST" name="username_password" finished-at="2024-10-07T19:24:16 IST" duration-ms="9496" status="PASS">
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.DataStructureStepDefination@15a04efb]" started-at="2024-10-08T07:36:40 IST" name="username_password" finished-at="2024-10-08T07:37:05 IST" duration-ms="24804" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- username_password -->
-        <test-method signature="Arraypage(java.lang.String)[pri:0, instance:StepDefination.ArraysDocPageStepDefination@38af9828]" started-at="2024-10-07T19:24:16 IST" name="Arraypage" data-provider="Arraysdatapro" finished-at="2024-10-07T19:24:32 IST" duration-ms="15517" status="PASS">
+        <test-method signature="Dspage([Ljava.lang.String;)[pri:0, instance:StepDefination.DataStructureStepDefination@15a04efb]" started-at="2024-10-08T07:37:05 IST" name="Dspage" data-provider="Graphsdatapro" finished-at="2024-10-08T07:37:27 IST" duration-ms="22313" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@4f2d995e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Dspage -->
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.DataStructureStepDefination@15a04efb]" started-at="2024-10-08T07:37:27 IST" name="username_password" finished-at="2024-10-08T07:37:40 IST" duration-ms="13224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- username_password -->
+        <test-method signature="Dspage([Ljava.lang.String;)[pri:0, instance:StepDefination.DataStructureStepDefination@15a04efb]" started-at="2024-10-08T07:37:40 IST" name="Dspage" data-provider="Graphsdatapro" finished-at="2024-10-08T07:38:03 IST" duration-ms="22578" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@6198e9b5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Dspage -->
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.DataStructureStepDefination@15a04efb]" started-at="2024-10-08T07:38:03 IST" name="username_password" finished-at="2024-10-08T07:38:16 IST" duration-ms="12667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- username_password -->
+        <test-method signature="username_password()[pri:0, instance:StepDefination.DataStructureStepDefination@15a04efb]" started-at="2024-10-08T07:38:16 IST" name="username_password" finished-at="2024-10-08T07:38:33 IST" duration-ms="17028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- username_password -->
+      </class> <!-- StepDefination.DataStructureStepDefination -->
+      <class name="StepDefination.GraphsStepDefinition">
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.GraphsStepDefinition@16c069df]" started-at="2024-10-08T07:36:40 IST" name="username_password" finished-at="2024-10-08T07:36:56 IST" duration-ms="16232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- username_password -->
+        <test-method signature="Graph_Representation([Ljava.lang.String;)[pri:0, instance:StepDefination.GraphsStepDefinition@16c069df]" started-at="2024-10-08T07:36:56 IST" name="Graph_Representation" data-provider="Graphsdatapro" finished-at="2024-10-08T07:37:18 IST" duration-ms="21244" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@bc6288b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Graph_Representation -->
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.GraphsStepDefinition@16c069df]" started-at="2024-10-08T07:37:18 IST" name="username_password" finished-at="2024-10-08T07:37:31 IST" duration-ms="13413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- username_password -->
+        <test-method signature="Graph_Representation([Ljava.lang.String;)[pri:0, instance:StepDefination.GraphsStepDefinition@16c069df]" started-at="2024-10-08T07:37:31 IST" name="Graph_Representation" data-provider="Graphsdatapro" finished-at="2024-10-08T07:37:52 IST" duration-ms="20760" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@75156240]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Graph_Representation -->
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.GraphsStepDefinition@16c069df]" started-at="2024-10-08T07:37:52 IST" name="username_password" finished-at="2024-10-08T07:38:03 IST" duration-ms="11555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- username_password -->
+        <test-method signature="graphs_Topic([Ljava.lang.String;)[pri:0, instance:StepDefination.GraphsStepDefinition@16c069df]" started-at="2024-10-08T07:38:03 IST" name="graphs_Topic" data-provider="Graphsdatapro" finished-at="2024-10-08T07:38:21 IST" duration-ms="17501" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@49a6f486]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- graphs_Topic -->
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.GraphsStepDefinition@16c069df]" started-at="2024-10-08T07:38:21 IST" name="username_password" finished-at="2024-10-08T07:38:36 IST" duration-ms="15066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- username_password -->
+        <test-method signature="graphs_Topic([Ljava.lang.String;)[pri:0, instance:StepDefination.GraphsStepDefinition@16c069df]" started-at="2024-10-08T07:38:36 IST" name="graphs_Topic" data-provider="Graphsdatapro" finished-at="2024-10-08T07:39:02 IST" duration-ms="26338" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@14fded9d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- graphs_Topic -->
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.GraphsStepDefinition@16c069df]" started-at="2024-10-08T07:39:02 IST" name="username_password" finished-at="2024-10-08T07:39:12 IST" duration-ms="9946" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- username_password -->
+        <test-method signature="username_password()[pri:0, instance:StepDefination.GraphsStepDefinition@16c069df]" started-at="2024-10-08T07:39:12 IST" name="username_password" finished-at="2024-10-08T07:39:26 IST" duration-ms="13713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- username_password -->
+      </class> <!-- StepDefination.GraphsStepDefinition -->
+      <class name="StepDefination.ArraysDocPageStepDefination">
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.ArraysDocPageStepDefination@2bec854f]" started-at="2024-10-08T07:36:40 IST" name="username_password" finished-at="2024-10-08T07:36:58 IST" duration-ms="17883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- username_password -->
+        <test-method signature="Arraypage(java.lang.String)[pri:0, instance:StepDefination.ArraysDocPageStepDefination@2bec854f]" started-at="2024-10-08T07:36:58 IST" name="Arraypage" data-provider="Arraysdatapro" finished-at="2024-10-08T07:37:34 IST" duration-ms="36679" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,11 +304,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Arraypage -->
-        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.ArraysDocPageStepDefination@38af9828]" started-at="2024-10-07T19:24:32 IST" name="username_password" finished-at="2024-10-07T19:24:39 IST" duration-ms="6990" status="PASS">
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.ArraysDocPageStepDefination@2bec854f]" started-at="2024-10-08T07:37:34 IST" name="username_password" finished-at="2024-10-08T07:37:45 IST" duration-ms="10475" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- username_password -->
-        <test-method signature="Arraypage(java.lang.String)[pri:0, instance:StepDefination.ArraysDocPageStepDefination@38af9828]" started-at="2024-10-07T19:24:39 IST" name="Arraypage" data-provider="Arraysdatapro" finished-at="2024-10-07T19:24:44 IST" duration-ms="4554" status="PASS">
+        <test-method signature="Arraypage(java.lang.String)[pri:0, instance:StepDefination.ArraysDocPageStepDefination@2bec854f]" started-at="2024-10-08T07:37:45 IST" name="Arraypage" data-provider="Arraysdatapro" finished-at="2024-10-08T07:38:03 IST" duration-ms="18005" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,11 +319,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Arraypage -->
-        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.ArraysDocPageStepDefination@38af9828]" started-at="2024-10-07T19:24:44 IST" name="username_password" finished-at="2024-10-07T19:24:51 IST" duration-ms="7346" status="PASS">
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.ArraysDocPageStepDefination@2bec854f]" started-at="2024-10-08T07:38:03 IST" name="username_password" finished-at="2024-10-08T07:38:16 IST" duration-ms="13075" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- username_password -->
-        <test-method signature="Arraypage(java.lang.String)[pri:0, instance:StepDefination.ArraysDocPageStepDefination@38af9828]" started-at="2024-10-07T19:24:51 IST" name="Arraypage" data-provider="Arraysdatapro" finished-at="2024-10-07T19:24:55 IST" duration-ms="4590" status="PASS">
+        <test-method signature="Arraypage(java.lang.String)[pri:0, instance:StepDefination.ArraysDocPageStepDefination@2bec854f]" started-at="2024-10-08T07:38:16 IST" name="Arraypage" data-provider="Arraysdatapro" finished-at="2024-10-08T07:38:38 IST" duration-ms="22227" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,11 +334,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Arraypage -->
-        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.ArraysDocPageStepDefination@38af9828]" started-at="2024-10-07T19:24:55 IST" name="username_password" finished-at="2024-10-07T19:25:02 IST" duration-ms="6267" status="PASS">
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.ArraysDocPageStepDefination@2bec854f]" started-at="2024-10-08T07:38:38 IST" name="username_password" finished-at="2024-10-08T07:38:56 IST" duration-ms="17499" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- username_password -->
-        <test-method signature="Arraypage(java.lang.String)[pri:0, instance:StepDefination.ArraysDocPageStepDefination@38af9828]" started-at="2024-10-07T19:25:02 IST" name="Arraypage" data-provider="Arraysdatapro" finished-at="2024-10-07T19:25:06 IST" duration-ms="4633" status="PASS">
+        <test-method signature="Arraypage(java.lang.String)[pri:0, instance:StepDefination.ArraysDocPageStepDefination@2bec854f]" started-at="2024-10-08T07:38:56 IST" name="Arraypage" data-provider="Arraysdatapro" finished-at="2024-10-08T07:39:10 IST" duration-ms="14116" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,11 +349,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Arraypage -->
-        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.ArraysDocPageStepDefination@38af9828]" started-at="2024-10-07T19:25:06 IST" name="username_password" finished-at="2024-10-07T19:25:13 IST" duration-ms="6153" status="PASS">
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.ArraysDocPageStepDefination@2bec854f]" started-at="2024-10-08T07:39:10 IST" name="username_password" finished-at="2024-10-08T07:39:26 IST" duration-ms="16579" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- username_password -->
-        <test-method signature="usingDp(java.lang.String)[pri:0, instance:StepDefination.ArraysDocPageStepDefination@38af9828]" started-at="2024-10-07T19:25:13 IST" name="usingDp" data-provider="Arraysdatapro" finished-at="2024-10-07T19:25:17 IST" duration-ms="4745" status="PASS">
+        <test-method signature="usingDp(java.lang.String)[pri:0, instance:StepDefination.ArraysDocPageStepDefination@2bec854f]" started-at="2024-10-08T07:39:26 IST" name="usingDp" data-provider="Arraysdatapro" finished-at="2024-10-08T07:39:49 IST" duration-ms="22826" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -90,11 +364,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usingDp -->
-        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.ArraysDocPageStepDefination@38af9828]" started-at="2024-10-07T19:25:17 IST" name="username_password" finished-at="2024-10-07T19:25:24 IST" duration-ms="6219" status="PASS">
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.ArraysDocPageStepDefination@2bec854f]" started-at="2024-10-08T07:39:49 IST" name="username_password" finished-at="2024-10-08T07:39:58 IST" duration-ms="8638" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- username_password -->
-        <test-method signature="usingDp(java.lang.String)[pri:0, instance:StepDefination.ArraysDocPageStepDefination@38af9828]" started-at="2024-10-07T19:25:24 IST" name="usingDp" data-provider="Arraysdatapro" finished-at="2024-10-07T19:25:28 IST" duration-ms="4653" status="PASS">
+        <test-method signature="usingDp(java.lang.String)[pri:0, instance:StepDefination.ArraysDocPageStepDefination@2bec854f]" started-at="2024-10-08T07:39:58 IST" name="usingDp" data-provider="Arraysdatapro" finished-at="2024-10-08T07:40:05 IST" duration-ms="7539" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -105,11 +379,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usingDp -->
-        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.ArraysDocPageStepDefination@38af9828]" started-at="2024-10-07T19:25:28 IST" name="username_password" finished-at="2024-10-07T19:25:35 IST" duration-ms="6957" status="PASS">
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.ArraysDocPageStepDefination@2bec854f]" started-at="2024-10-08T07:40:05 IST" name="username_password" finished-at="2024-10-08T07:40:15 IST" duration-ms="9294" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- username_password -->
-        <test-method signature="usingDp(java.lang.String)[pri:0, instance:StepDefination.ArraysDocPageStepDefination@38af9828]" started-at="2024-10-07T19:25:35 IST" name="usingDp" data-provider="Arraysdatapro" finished-at="2024-10-07T19:25:40 IST" duration-ms="4469" status="PASS">
+        <test-method signature="usingDp(java.lang.String)[pri:0, instance:StepDefination.ArraysDocPageStepDefination@2bec854f]" started-at="2024-10-08T07:40:15 IST" name="usingDp" data-provider="Arraysdatapro" finished-at="2024-10-08T07:40:28 IST" duration-ms="13168" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -120,11 +394,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usingDp -->
-        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.ArraysDocPageStepDefination@38af9828]" started-at="2024-10-07T19:25:40 IST" name="username_password" finished-at="2024-10-07T19:25:46 IST" duration-ms="6353" status="PASS">
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.ArraysDocPageStepDefination@2bec854f]" started-at="2024-10-08T07:40:28 IST" name="username_password" finished-at="2024-10-08T07:40:37 IST" duration-ms="9591" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- username_password -->
-        <test-method signature="usingDp(java.lang.String)[pri:0, instance:StepDefination.ArraysDocPageStepDefination@38af9828]" started-at="2024-10-07T19:25:46 IST" name="usingDp" data-provider="Arraysdatapro" finished-at="2024-10-07T19:25:50 IST" duration-ms="4385" status="PASS">
+        <test-method signature="usingDp(java.lang.String)[pri:0, instance:StepDefination.ArraysDocPageStepDefination@2bec854f]" started-at="2024-10-08T07:40:37 IST" name="usingDp" data-provider="Arraysdatapro" finished-at="2024-10-08T07:40:47 IST" duration-ms="9702" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -135,15 +409,175 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usingDp -->
-        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.ArraysDocPageStepDefination@38af9828]" started-at="2024-10-07T19:25:50 IST" name="username_password" finished-at="2024-10-07T19:25:58 IST" duration-ms="7467" status="PASS">
+        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.ArraysDocPageStepDefination@2bec854f]" started-at="2024-10-08T07:40:47 IST" name="username_password" finished-at="2024-10-08T07:40:56 IST" duration-ms="8727" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- username_password -->
-        <test-method signature="username_password()[pri:0, instance:StepDefination.ArraysDocPageStepDefination@38af9828]" started-at="2024-10-07T19:25:58 IST" name="username_password" finished-at="2024-10-07T19:26:04 IST" duration-ms="6038" status="PASS">
+        <test-method signature="username_password()[pri:0, instance:StepDefination.ArraysDocPageStepDefination@2bec854f]" started-at="2024-10-08T07:40:56 IST" name="username_password" finished-at="2024-10-08T07:41:04 IST" duration-ms="8330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- username_password -->
       </class> <!-- StepDefination.ArraysDocPageStepDefination -->
-    </test> <!-- Test -->
+    </test> <!-- Test2 -->
+    <test started-at="2024-10-08T07:41:04 IST" name="Test3" finished-at="2024-10-08T07:41:19 IST" duration-ms="15181">
+      <class name="StepDefination.RegistratnStepDefination">
+        <test-method signature="callingobjects()[pri:1, instance:StepDefination.RegistratnStepDefination@2663e964]" started-at="2024-10-08T07:41:04 IST" name="callingobjects" finished-at="2024-10-08T07:41:12 IST" duration-ms="7786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- callingobjects -->
+        <test-method signature="enter_username_password_click_btn()[pri:2, instance:StepDefination.RegistratnStepDefination@2663e964]" started-at="2024-10-08T07:41:12 IST" name="enter_username_password_click_btn" finished-at="2024-10-08T07:41:13 IST" duration-ms="1328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enter_username_password_click_btn -->
+        <test-method signature="click_registration_link_and_user_is_in_registration_page()[pri:3, instance:StepDefination.RegistratnStepDefination@2663e964]" started-at="2024-10-08T07:41:13 IST" name="click_registration_link_and_user_is_in_registration_page" finished-at="2024-10-08T07:41:16 IST" duration-ms="2629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_registration_link_and_user_is_in_registration_page -->
+        <test-method signature="user_enter_credentials(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:StepDefination.RegistratnStepDefination@2663e964]" started-at="2024-10-08T07:41:16 IST" name="user_enter_credentials" data-provider="Registationdatapro" finished-at="2024-10-08T07:41:17 IST" duration-ms="889" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nirvana]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[archanachaya]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[print("helloSelenium")]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_enter_credentials -->
+        <test-method signature="clickRegisterbtn()[pri:5, instance:StepDefination.RegistratnStepDefination@2663e964]" started-at="2024-10-08T07:41:17 IST" name="clickRegisterbtn" finished-at="2024-10-08T07:41:18 IST" duration-ms="822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickRegisterbtn -->
+        <test-method signature="quitmethod()[pri:6, instance:StepDefination.RegistratnStepDefination@2663e964]" started-at="2024-10-08T07:41:18 IST" name="quitmethod" finished-at="2024-10-08T07:41:19 IST" duration-ms="1626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitmethod -->
+      </class> <!-- StepDefination.RegistratnStepDefination -->
+    </test> <!-- Test3 -->
+    <test started-at="2024-10-08T07:41:19 IST" name="Test6" finished-at="2024-10-08T07:41:59 IST" duration-ms="39063">
+      <class name="StepDefination.DataStructureStepDefination">
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:StepDefination.DataStructureStepDefination@15a04efb]" started-at="2024-10-08T07:36:25 IST" name="BeforeSuite" finished-at="2024-10-08T07:36:25 IST" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+      </class> <!-- StepDefination.DataStructureStepDefination -->
+      <class name="StepDefination.SigninPositiveNegativeLogin">
+        <test-method is-config="true" signature="Beforemethod()[pri:0, instance:StepDefination.SigninPositiveNegativeLogin@2205a05d]" started-at="2024-10-08T07:41:20 IST" name="Beforemethod" finished-at="2024-10-08T07:41:29 IST" duration-ms="9154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Beforemethod -->
+        <test-method signature="LoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:StepDefination.SigninPositiveNegativeLogin@2205a05d]" started-at="2024-10-08T07:41:29 IST" name="LoginTest" data-provider="Logindata" finished-at="2024-10-08T07:41:31 IST" duration-ms="1965" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nirvana]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[archanachaya]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="Beforemethod()[pri:0, instance:StepDefination.SigninPositiveNegativeLogin@2205a05d]" started-at="2024-10-08T07:41:31 IST" name="Beforemethod" finished-at="2024-10-08T07:41:40 IST" duration-ms="9361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Beforemethod -->
+        <test-method signature="LoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:StepDefination.SigninPositiveNegativeLogin@2205a05d]" started-at="2024-10-08T07:41:40 IST" name="LoginTest" data-provider="Logindata" finished-at="2024-10-08T07:41:41 IST" duration-ms="1255" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Narvana]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[archanachaya]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[InValid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="Beforemethod()[pri:0, instance:StepDefination.SigninPositiveNegativeLogin@2205a05d]" started-at="2024-10-08T07:41:41 IST" name="Beforemethod" finished-at="2024-10-08T07:41:49 IST" duration-ms="7850" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Beforemethod -->
+        <test-method signature="LoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:StepDefination.SigninPositiveNegativeLogin@2205a05d]" started-at="2024-10-08T07:41:49 IST" name="LoginTest" data-provider="Logindata" finished-at="2024-10-08T07:41:51 IST" duration-ms="1365" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nirvana]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[65786687898]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[InValid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="Beforemethod()[pri:0, instance:StepDefination.SigninPositiveNegativeLogin@2205a05d]" started-at="2024-10-08T07:41:51 IST" name="Beforemethod" finished-at="2024-10-08T07:41:57 IST" duration-ms="6045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Beforemethod -->
+        <test-method signature="LoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:StepDefination.SigninPositiveNegativeLogin@2205a05d]" started-at="2024-10-08T07:41:57 IST" name="LoginTest" data-provider="Logindata" finished-at="2024-10-08T07:41:59 IST" duration-ms="1879" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hsjkcbjkcb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hggdyw78]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[InValid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+      </class> <!-- StepDefination.SigninPositiveNegativeLogin -->
+    </test> <!-- Test6 -->
   </suite> <!-- Suite -->
 </testng-results>

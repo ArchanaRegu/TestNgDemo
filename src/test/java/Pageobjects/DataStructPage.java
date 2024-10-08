@@ -1,5 +1,6 @@
 package Pageobjects;
 
+import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,6 +19,9 @@ public WebDriver driver;
 public 	DataStructPage(WebDriver driver) {
 	this.driver=driver;
 }
+public String get_Title() {
+	return driver.getTitle();
+}
 public void click_DSgetstart() {
 	driver.findElement(DS_GeTS_link).click();
 	System.out.println("Title of new page "+driver.getTitle());
@@ -30,18 +34,19 @@ public boolean topic_displayed() {
 }public void click_timecomplex() {
 	driver.findElement(timecomplex).click();
 	System.out.println("Title of new page:"+ driver.getTitle());
+}
+public void click_tryhere() {
 	driver.findElement(tryhere).click();
 	System.out.println("Title of new page: "+driver.getTitle());
-}public void enter_valideditor(String validcode) {
+}
+public void enter_valideditor(String validcode) {
 	WebElement editor_page=driver.findElement(input);
 	
     new Actions(driver).sendKeys(editor_page,validcode).perform();
-    System.out.println("printed code:"+validcode);
 		}
 public void enter_Invalideditor(String Invalidecode) {
 	WebElement editor_page=driver.findElement(input);
     new Actions(driver).sendKeys(editor_page,Invalidecode).perform();
-    System.out.println("printed code:"+Invalidecode);
 	}
 public String Output() {
 	driver.findElement(Runbtn).click();
