@@ -33,7 +33,8 @@ public class ArraysDocPageStepDefination extends Parent{
 		arraysdocpage.click_getstarted();
 	    System.out.println("actaual list:"+arraysdocpage.List_arraysTopics());
 	    System.out.println(ArraysLinks+" This link ");
-		arraysdocpage.clickPaneListLinks(ArraysLinks);
+		arraysdocpage.clickPaneListLinks("Arrays in Python");
+		
 		arraysdocpage.click_Tryhere_btn();
 		//User Enters valid code in editorpage
 		String validcode=excelnew.getData(1, 2);
@@ -42,6 +43,7 @@ public class ArraysDocPageStepDefination extends Parent{
 		System.out.println(datastructpage.Output());
 		testcontextsetup.testbase.WebDriverManager().quit();
 		}
+	
 
 	@Test(dataProvider = "Arraysdatapro",dataProviderClass = DataproviderSupplier.class)
 	public void Arraypage(String ArraysLinks) throws Exception {

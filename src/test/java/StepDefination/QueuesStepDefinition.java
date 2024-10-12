@@ -21,7 +21,7 @@ public class QueuesStepDefinition extends Parent{
 		Assert.assertTrue(queuesPageObjects.displayHeading());
 		queuesPageObjects.get_Title();
 		System.out.println(queuesPageObjects.topicsDisplayed());
-		queuesPageObjects.user_clicks(QueuesTopic[5]);
+		queuesPageObjects.user_clicks(QueuesTopic[4]);
 		 arraysdocpage.click_Tryhere_btn();
 		    String validcode=excelnew.getData(1, 2);
 			datastructpage.enter_valideditor(validcode);
