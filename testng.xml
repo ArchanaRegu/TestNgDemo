@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite"  >
-	
-   <test name="Test">
+	 <test name="Test1">
+    <classes>
+      <class name="StepDefination.HomepageStepDefination"/>
+      </classes>
+  </test> 
+   
+  <test name="Test2" parallel="classes" thread-count="4">
+	    <classes>
+      <class name="StepDefination.DataStructureStepDefination"/>
+      <class name="StepDefination.GraphsStepDefinition"/>
+       <class name="StepDefination.ArraysDocPageStepDefination"/>
+       <class name="StepDefination.QueuesStepDefinition"/>
+      </classes>
+  </test>
+   
+   <test name="Test3">
+    <classes>
+      <class name="StepDefination.RegistratnStepDefination"/>
+      </classes>
+  </test> 
+   <test name="Test6">
     <classes>
       <class name="StepDefination.SigninPositiveNegativeLogin"/>
-      <class name="StepDefination.RegistratnStepDefination"/>
       </classes>
   </test> 
   <!-- Test -->

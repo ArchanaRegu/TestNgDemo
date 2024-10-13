@@ -6,13 +6,7 @@ import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import Pageobjects.QueuesPageObjects;
-import Utils.ExcelDataprovider;
-import Utils.TestContextSetup;
-import io.cucumber.datatable.DataTable;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+
 
 public class QueuesStepDefinition extends Parent{
 	@Test(dataProvider = "Topics",dataProviderClass = DataproviderSupplier.class)
@@ -34,7 +28,7 @@ public class QueuesStepDefinition extends Parent{
 		Assert.assertTrue(queuesPageObjects.displayHeading());
 		queuesPageObjects.get_Title();
 		System.out.println(queuesPageObjects.topicsDisplayed());
-		queuesPageObjects.user_clicks(QueuesTopic[5]);
+		queuesPageObjects.user_clicks(QueuesTopic[4]);
 		 arraysdocpage.click_Tryhere_btn();
 		    String Invalidcode=excelnew.getData(1, 3);
 			datastructpage.enter_valideditor(Invalidcode);
