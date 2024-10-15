@@ -22,6 +22,7 @@ import Pageobjects.ArraysDocPageObjects;
 import Pageobjects.DataStructPage;
 import Pageobjects.Signinpageobjects;
 import Pageobjects.landingpageobjects;
+import Utils.DataproviderSupplier;
 import Utils.ExcelDataprovider;
 import Utils.TestContextSetup;
 import io.cucumber.datatable.DataTable;
@@ -36,7 +37,6 @@ public class ArraysDocPageStepDefination extends Parent{
 	    System.out.println("actaual list:"+arraysdocpage.List_arraysTopics());
 	    System.out.println(ArraysLinks+" This link ");
 		arraysdocpage.clickPaneListLinks("Arrays in Python");
-		
 		arraysdocpage.click_Tryhere_btn();
 		//User Enters valid code in editorpage
 		String validcode=excelnew.getData(1, 2);

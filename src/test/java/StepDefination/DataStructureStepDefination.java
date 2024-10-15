@@ -14,6 +14,7 @@ import Pageobjects.ArraysDocPageObjects;
 import Pageobjects.DataStructPage;
 import Pageobjects.Signinpageobjects;
 import Pageobjects.landingpageobjects;
+import Utils.DataproviderSupplier;
 import Utils.ExcelDataRetriver;
 import Utils.ExcelDataprovider;
 import Utils.ExcelUtil;
@@ -23,15 +24,16 @@ public class DataStructureStepDefination extends Parent{
 	
 	@Test(dataProvider = "Graphsdatapro",dataProviderClass = DataproviderSupplier.class)
 	//@Given("Click  GetStarted button of Data Structures-Introduction pane.")
-	public void Dspage(String[] validInvalidcode) throws IOException {
+	public void Dspage(String username,String password,String code,String validinvalid) throws IOException {
 		System.out.println("This is from datastructure"+Thread.currentThread().getName());
 		datastructpage.click_DSgetstart();
 		Assert.assertTrue(datastructpage.topic_displayed());
 	    datastructpage.click_timecomplex();
 	    String title=datastructpage.get_Title();
-	    System.out.println(title+": "+validInvalidcode[3]+"code ="+validInvalidcode[2]);
+	    //[3] is for valid or invalid title;[2] is code
+	    System.out.println(title+": "+validinvalid+"code ="+code);
 		datastructpage.click_tryhere();
-	    datastructpage.enter_valideditor(validInvalidcode[2]);
+	    datastructpage.enter_valideditor(code);
 		//click run button and capture output
 		System.out.println("output : "+datastructpage.Output());
 		testcontextsetup.testbase.WebDriverManager().quit();

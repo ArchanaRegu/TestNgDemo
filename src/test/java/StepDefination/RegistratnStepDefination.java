@@ -10,6 +10,7 @@ import Pageobjects.ArraysDocPageObjects;
 import Pageobjects.RegistrationPage;
 import Pageobjects.Signinpageobjects;
 import Pageobjects.landingpageobjects;
+import Utils.DataproviderSupplier;
 import Utils.ExcelDataprovider;
 import Utils.TestContextSetup;
 import io.cucumber.java.en.*;

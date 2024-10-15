@@ -11,24 +11,13 @@ import org.testng.annotations.Test;
 import Pageobjects.RegistrationPage;
 import Pageobjects.Signinpageobjects;
 import Pageobjects.landingpageobjects;
+import Utils.DataproviderSupplier;
 import Utils.RerunautomationScript;
 import Utils.TestContextSetup;
 
-public class Registrationrerun {
-	TestContextSetup testcontextsetup;
-	public RegistrationPage registerpage;
-	landingpageobjects landingpage;
-	Signinpageobjects signinpage;
-	@BeforeMethod
-	public void callingobjects() throws Exception {
-	testcontextsetup=new TestContextSetup();
-	landingpage=testcontextsetup.pageobjectmanager.getLandingpageobjects();
-	signinpage=testcontextsetup.pageobjectmanager.getSigninpageobjects();
-	registerpage=testcontextsetup.pageobjectmanager.getRegistrationPage();
-	} 
-	
-	
-    @Test(retryAnalyzer = RerunautomationScript.class,dataProvider ="Registationdatapro",dataProviderClass = DataproviderSupplier.class) 
+public class Registrationrerun extends capturescreen {
+		
+    @Test(testName = "Registration", retryAnalyzer = RerunautomationScript.class,dataProvider ="Registationdatapro",dataProviderClass = DataproviderSupplier.class) 
 	//"User enter credentials and Click Register or Clicks login link"
 	public void Registrationpage(String username,String password,String code,String valIn) throws IOException {
     	landingpage.click_getstartbtn();

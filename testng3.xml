@@ -4,7 +4,9 @@
 	
 	 <test name="Test1">
     <classes>
-      <class name="StepDefination.Registrationrerun"/>
+      <class name="StepDefination.Registrationrerun">
+      <!-- <methods><include name="Registration"></include></methods>-->
+      </class>
       </classes>
   </test> 
    

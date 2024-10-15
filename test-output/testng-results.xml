@@ -1,149 +1,515 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results retried="5" ignored="5" total="11" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-15T04:42:34 CDT" name="Suite" finished-at="2024-10-15T04:44:05 CDT" duration-ms="90613">
+  <suite started-at="2024-10-15T06:49:25 CDT" name="Suite" finished-at="2024-10-15T06:50:09 CDT" duration-ms="43826">
     <groups>
     </groups>
-    <test started-at="2024-10-15T04:42:34 CDT" name="Test1" finished-at="2024-10-15T04:44:05 CDT" duration-ms="90613">
-      <class name="StepDefination.QueuesStepDefinition">
-        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:StepDefination.QueuesStepDefinition@38af9828]" started-at="2024-10-15T04:42:34 CDT" name="BeforeSuite" finished-at="2024-10-15T04:42:34 CDT" duration-ms="36" status="PASS">
+    <test started-at="2024-10-15T06:49:25 CDT" name="Test1" finished-at="2024-10-15T06:50:09 CDT" duration-ms="43826">
+      <class name="StepDefination.Registrationrerun">
+        <test-method is-config="true" signature="callingobjects()[pri:0, instance:StepDefination.Registrationrerun@4149c063]" started-at="2024-10-15T06:49:27 CDT" name="callingobjects" finished-at="2024-10-15T06:49:31 CDT" duration-ms="4475" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BeforeSuite -->
-        <test-method is-config="true" signature="BeforeScenario1()[pri:0, instance:StepDefination.QueuesStepDefinition@38af9828]" started-at="2024-10-15T04:42:34 CDT" name="BeforeScenario1" finished-at="2024-10-15T04:42:34 CDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeScenario1 -->
-        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.QueuesStepDefinition@38af9828]" started-at="2024-10-15T04:42:34 CDT" name="username_password" finished-at="2024-10-15T04:42:43 CDT" duration-ms="8900" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- username_password -->
-        <test-method signature="username_password()[pri:0, instance:StepDefination.QueuesStepDefinition@38af9828]" started-at="2024-10-15T04:42:44 CDT" name="username_password" finished-at="2024-10-15T04:42:50 CDT" duration-ms="6082" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- username_password -->
-        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.QueuesStepDefinition@38af9828]" started-at="2024-10-15T04:42:50 CDT" name="username_password" finished-at="2024-10-15T04:43:04 CDT" duration-ms="13411" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- username_password -->
-        <test-method signature="queues_paneIn([Ljava.lang.String;)[pri:0, instance:StepDefination.QueuesStepDefinition@38af9828]" started-at="2024-10-15T04:43:04 CDT" name="queues_paneIn" data-provider="Topics" finished-at="2024-10-15T04:43:09 CDT" duration-ms="5489" status="PASS">
+        </test-method> <!-- callingobjects -->
+        <test-method retried="true" signature="Registrationpage(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:StepDefination.Registrationrerun@4149c063]" started-at="2024-10-15T06:49:31 CDT" name="Registrationpage" data-provider="Registationdatapro" finished-at="2024-10-15T06:49:33 CDT" duration-ms="2038" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@20184ade]]>
+                <![CDATA[Nirvana]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[archanachaya]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[print("helloSelenium")]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Credentials already exists] but found [password_mismatch:The two password fields didn’t match.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Credentials already exists] but found [password_mismatch:The two password fields didn’t match.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at StepDefination.Registrationrerun.Registrationpage(Registrationrerun.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registrationpage -->
+        <test-method is-config="true" signature="captureString(org.testng.ITestResult)[pri:0, instance:StepDefination.Registrationrerun@4149c063]" started-at="2024-10-15T06:49:34 CDT" name="captureString" finished-at="2024-10-15T06:49:34 CDT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Registrationpage status=SKIP method=Registrationrerun.Registrationpage(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:StepDefination.Registrationrerun@4149c063] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- queues_paneIn -->
-        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.QueuesStepDefinition@38af9828]" started-at="2024-10-15T04:43:09 CDT" name="username_password" finished-at="2024-10-15T04:43:15 CDT" duration-ms="6037" status="PASS">
+        </test-method> <!-- captureString -->
+        <test-method is-config="true" signature="callingobjects()[pri:0, instance:StepDefination.Registrationrerun@4149c063]" started-at="2024-10-15T06:49:34 CDT" name="callingobjects" finished-at="2024-10-15T06:49:37 CDT" duration-ms="3310" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- username_password -->
-        <test-method signature="queues_paneIn([Ljava.lang.String;)[pri:0, instance:StepDefination.QueuesStepDefinition@38af9828]" started-at="2024-10-15T04:43:15 CDT" name="queues_paneIn" data-provider="Topics" finished-at="2024-10-15T04:43:19 CDT" duration-ms="3428" status="PASS">
+        </test-method> <!-- callingobjects -->
+        <test-method retried="true" signature="Registrationpage(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:StepDefination.Registrationrerun@4149c063]" started-at="2024-10-15T06:49:37 CDT" name="Registrationpage" data-provider="Registationdatapro" finished-at="2024-10-15T06:49:39 CDT" duration-ms="1891" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@22361e23]]>
+                <![CDATA[Nirvana]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[archanachaya]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[print("helloSelenium")]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Credentials already exists] but found [password_mismatch:The two password fields didn’t match.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Credentials already exists] but found [password_mismatch:The two password fields didn’t match.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at StepDefination.Registrationrerun.Registrationpage(Registrationrerun.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registrationpage -->
+        <test-method is-config="true" signature="captureString(org.testng.ITestResult)[pri:0, instance:StepDefination.Registrationrerun@4149c063]" started-at="2024-10-15T06:49:39 CDT" name="captureString" finished-at="2024-10-15T06:49:39 CDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Registrationpage status=SKIP method=Registrationrerun.Registrationpage(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:StepDefination.Registrationrerun@4149c063] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- queues_paneIn -->
-        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.QueuesStepDefinition@38af9828]" started-at="2024-10-15T04:43:19 CDT" name="username_password" finished-at="2024-10-15T04:43:24 CDT" duration-ms="5497" status="PASS">
+        </test-method> <!-- captureString -->
+        <test-method is-config="true" signature="callingobjects()[pri:0, instance:StepDefination.Registrationrerun@4149c063]" started-at="2024-10-15T06:49:39 CDT" name="callingobjects" finished-at="2024-10-15T06:49:42 CDT" duration-ms="3365" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- username_password -->
-        <test-method signature="queues_paneIn([Ljava.lang.String;)[pri:0, instance:StepDefination.QueuesStepDefinition@38af9828]" started-at="2024-10-15T04:43:24 CDT" name="queues_paneIn" data-provider="Topics" finished-at="2024-10-15T04:43:26 CDT" duration-ms="2400" status="PASS">
+        </test-method> <!-- callingobjects -->
+        <test-method retried="true" signature="Registrationpage(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:StepDefination.Registrationrerun@4149c063]" started-at="2024-10-15T06:49:42 CDT" name="Registrationpage" data-provider="Registationdatapro" finished-at="2024-10-15T06:49:45 CDT" duration-ms="2698" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@26aee0a6]]>
+                <![CDATA[Nirvana]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[archanachaya]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[print("helloSelenium")]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Credentials already exists] but found [password_mismatch:The two password fields didn’t match.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Credentials already exists] but found [password_mismatch:The two password fields didn’t match.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at StepDefination.Registrationrerun.Registrationpage(Registrationrerun.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registrationpage -->
+        <test-method is-config="true" signature="captureString(org.testng.ITestResult)[pri:0, instance:StepDefination.Registrationrerun@4149c063]" started-at="2024-10-15T06:49:45 CDT" name="captureString" finished-at="2024-10-15T06:49:45 CDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Registrationpage status=SKIP method=Registrationrerun.Registrationpage(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:StepDefination.Registrationrerun@4149c063] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- queues_paneIn -->
-        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.QueuesStepDefinition@38af9828]" started-at="2024-10-15T04:43:26 CDT" name="username_password" finished-at="2024-10-15T04:43:31 CDT" duration-ms="4970" status="PASS">
+        </test-method> <!-- captureString -->
+        <test-method is-config="true" signature="callingobjects()[pri:0, instance:StepDefination.Registrationrerun@4149c063]" started-at="2024-10-15T06:49:45 CDT" name="callingobjects" finished-at="2024-10-15T06:49:48 CDT" duration-ms="3537" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- username_password -->
-        <test-method signature="queues_paneIn([Ljava.lang.String;)[pri:0, instance:StepDefination.QueuesStepDefinition@38af9828]" started-at="2024-10-15T04:43:31 CDT" name="queues_paneIn" data-provider="Topics" finished-at="2024-10-15T04:43:35 CDT" duration-ms="3206" status="PASS">
+        </test-method> <!-- callingobjects -->
+        <test-method retried="true" signature="Registrationpage(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:StepDefination.Registrationrerun@4149c063]" started-at="2024-10-15T06:49:48 CDT" name="Registrationpage" data-provider="Registationdatapro" finished-at="2024-10-15T06:49:50 CDT" duration-ms="1937" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@2e0516a3]]>
+                <![CDATA[Nirvana]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[archanachaya]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[print("helloSelenium")]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Credentials already exists] but found [password_mismatch:The two password fields didn’t match.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Credentials already exists] but found [password_mismatch:The two password fields didn’t match.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at StepDefination.Registrationrerun.Registrationpage(Registrationrerun.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registrationpage -->
+        <test-method is-config="true" signature="captureString(org.testng.ITestResult)[pri:0, instance:StepDefination.Registrationrerun@4149c063]" started-at="2024-10-15T06:49:50 CDT" name="captureString" finished-at="2024-10-15T06:49:50 CDT" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Registrationpage status=SKIP method=Registrationrerun.Registrationpage(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:StepDefination.Registrationrerun@4149c063] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- queues_paneIn -->
-        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.QueuesStepDefinition@38af9828]" started-at="2024-10-15T04:43:35 CDT" name="username_password" finished-at="2024-10-15T04:43:40 CDT" duration-ms="4806" status="PASS">
+        </test-method> <!-- captureString -->
+        <test-method is-config="true" signature="callingobjects()[pri:0, instance:StepDefination.Registrationrerun@4149c063]" started-at="2024-10-15T06:49:50 CDT" name="callingobjects" finished-at="2024-10-15T06:49:55 CDT" duration-ms="4430" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- username_password -->
-        <test-method signature="queues_pane_validcode([Ljava.lang.String;)[pri:0, instance:StepDefination.QueuesStepDefinition@38af9828]" started-at="2024-10-15T04:43:40 CDT" name="queues_pane_validcode" data-provider="Topics" finished-at="2024-10-15T04:43:42 CDT" duration-ms="2290" status="PASS">
+        </test-method> <!-- callingobjects -->
+        <test-method retried="true" signature="Registrationpage(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:StepDefination.Registrationrerun@4149c063]" started-at="2024-10-15T06:49:55 CDT" name="Registrationpage" data-provider="Registationdatapro" finished-at="2024-10-15T06:49:58 CDT" duration-ms="2884" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@6f4d2294]]>
+                <![CDATA[Nirvana]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[archanachaya]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[print("helloSelenium")]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Credentials already exists] but found [password_mismatch:The two password fields didn’t match.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Credentials already exists] but found [password_mismatch:The two password fields didn’t match.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at StepDefination.Registrationrerun.Registrationpage(Registrationrerun.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registrationpage -->
+        <test-method is-config="true" signature="captureString(org.testng.ITestResult)[pri:0, instance:StepDefination.Registrationrerun@4149c063]" started-at="2024-10-15T06:49:58 CDT" name="captureString" finished-at="2024-10-15T06:49:58 CDT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Registrationpage status=SKIP method=Registrationrerun.Registrationpage(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:StepDefination.Registrationrerun@4149c063] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- queues_pane_validcode -->
-        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.QueuesStepDefinition@38af9828]" started-at="2024-10-15T04:43:42 CDT" name="username_password" finished-at="2024-10-15T04:43:47 CDT" duration-ms="5455" status="PASS">
+        </test-method> <!-- captureString -->
+        <test-method is-config="true" signature="callingobjects()[pri:0, instance:StepDefination.Registrationrerun@4149c063]" started-at="2024-10-15T06:49:58 CDT" name="callingobjects" finished-at="2024-10-15T06:50:03 CDT" duration-ms="5603" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- username_password -->
-        <test-method signature="queues_pane_validcode([Ljava.lang.String;)[pri:0, instance:StepDefination.QueuesStepDefinition@38af9828]" started-at="2024-10-15T04:43:47 CDT" name="queues_pane_validcode" data-provider="Topics" finished-at="2024-10-15T04:43:50 CDT" duration-ms="2454" status="PASS">
+        </test-method> <!-- callingobjects -->
+        <test-method signature="Registrationpage(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:StepDefination.Registrationrerun@4149c063]" started-at="2024-10-15T06:50:03 CDT" name="Registrationpage" data-provider="Registationdatapro" finished-at="2024-10-15T06:50:07 CDT" duration-ms="3474" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@32a4ea4e]]>
+                <![CDATA[Nirvana]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[archanachaya]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[print("helloSelenium")]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Credentials already exists] but found [password_mismatch:The two password fields didn’t match.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Credentials already exists] but found [password_mismatch:The two password fields didn’t match.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at StepDefination.Registrationrerun.Registrationpage(Registrationrerun.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registrationpage -->
+        <test-method is-config="true" signature="captureString(org.testng.ITestResult)[pri:0, instance:StepDefination.Registrationrerun@4149c063]" started-at="2024-10-15T06:50:07 CDT" name="captureString" finished-at="2024-10-15T06:50:07 CDT" duration-ms="279" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Registrationpage status=FAILURE method=Registrationrerun.Registrationpage(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:StepDefination.Registrationrerun@4149c063] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- queues_pane_validcode -->
-        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.QueuesStepDefinition@38af9828]" started-at="2024-10-15T04:43:50 CDT" name="username_password" finished-at="2024-10-15T04:43:55 CDT" duration-ms="5208" status="PASS">
+        </test-method> <!-- captureString -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:StepDefination.Registrationrerun@4149c063]" started-at="2024-10-15T06:50:07 CDT" name="teardown" finished-at="2024-10-15T06:50:09 CDT" duration-ms="1880" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- username_password -->
-        <test-method signature="queues_pane_validcode([Ljava.lang.String;)[pri:0, instance:StepDefination.QueuesStepDefinition@38af9828]" started-at="2024-10-15T04:43:55 CDT" name="queues_pane_validcode" data-provider="Topics" finished-at="2024-10-15T04:43:57 CDT" duration-ms="2404" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.String;@347b370c]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queues_pane_validcode -->
-        <test-method is-config="true" signature="username_password()[pri:0, instance:StepDefination.QueuesStepDefinition@38af9828]" started-at="2024-10-15T04:43:57 CDT" name="username_password" finished-at="2024-10-15T04:44:02 CDT" duration-ms="4869" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- username_password -->
-        <test-method signature="queues_pane_validcode([Ljava.lang.String;)[pri:0, instance:StepDefination.QueuesStepDefinition@38af9828]" started-at="2024-10-15T04:44:02 CDT" name="queues_pane_validcode" data-provider="Topics" finished-at="2024-10-15T04:44:05 CDT" duration-ms="2795" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.String;@6cde0c69]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queues_pane_validcode -->
-      </class> <!-- StepDefination.QueuesStepDefinition -->
+        </test-method> <!-- teardown -->
+      </class> <!-- StepDefination.Registrationrerun -->
     </test> <!-- Test1 -->
   </suite> <!-- Suite -->
 </testng-results>
