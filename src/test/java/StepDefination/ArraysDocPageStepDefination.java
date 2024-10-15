@@ -1,33 +1,9 @@
 package StepDefination;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import Listenerspackage.ITestListenersclass;
-import Pageobjects.ArraysDocPageObjects;
-import Pageobjects.DataStructPage;
-import Pageobjects.Signinpageobjects;
-import Pageobjects.landingpageobjects;
 import Utils.DataproviderSupplier;
-import Utils.ExcelDataprovider;
-import Utils.TestContextSetup;
-import io.cucumber.datatable.DataTable;
-import io.cucumber.java.Scenario;
-import io.cucumber.java.en.*;
+
 //@Listeners(ITestListenersclass.class)
 public class ArraysDocPageStepDefination extends Parent{
 	@Test(dataProvider = "Arraysdatapro",dataProviderClass = DataproviderSupplier.class)
