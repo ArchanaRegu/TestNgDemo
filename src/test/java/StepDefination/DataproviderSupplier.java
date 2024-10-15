@@ -39,7 +39,7 @@ public class DataproviderSupplier {
 return data;
 }
 	
-	@DataProvider(name="Topics")
+	@DataProvider(name="Topics",indices = {0,1,2,3})
 	public String[][] getdataLogin() throws Exception {
 		File excelFile=new File("./src/test/resources/excel/Testdata.xlsx");
 		FileInputStream fis=new FileInputStream(excelFile);

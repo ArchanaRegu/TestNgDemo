@@ -39,8 +39,8 @@ public void enter_confirmpassword(String cpwd) {
 public void click_register_button() {
 	driver.findElement(registerbtn).click();
 }
-public void alert_message() {
+public String alert_message() {
 	WebElement alertmessage=driver.findElement(alert);
-	System.out.println(alertmessage.getText());
+	return alertmessage.getText();
 }
 }

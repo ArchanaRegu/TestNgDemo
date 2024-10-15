@@ -52,7 +52,9 @@ public class RegistratnStepDefination {
     @Test(priority=5)
     public void clickRegisterbtn() {
 		registerpage.click_register_button();
-		registerpage.alert_message();
+		String Actualmessage=registerpage.alert_message();
+		String Expectedmessage="Credentials already exists";
+		Assert.assertEquals(Actualmessage, Expectedmessage);
 	}
     @Test(priority=6)
     public void quitmethod() throws IOException {

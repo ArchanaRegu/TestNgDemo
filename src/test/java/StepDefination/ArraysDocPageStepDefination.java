@@ -14,8 +14,10 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import Listenerspackage.ITestListenersclass;
 import Pageobjects.ArraysDocPageObjects;
 import Pageobjects.DataStructPage;
 import Pageobjects.Signinpageobjects;
@@ -25,7 +27,7 @@ import Utils.TestContextSetup;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.en.*;
-
+//@Listeners(ITestListenersclass.class)
 public class ArraysDocPageStepDefination extends Parent{
 	@Test(dataProvider = "Arraysdatapro",dataProviderClass = DataproviderSupplier.class)
 	//@And("User Clicks GetStated button of Arrays pane.")

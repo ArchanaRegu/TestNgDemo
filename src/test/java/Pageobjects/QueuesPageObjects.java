@@ -18,7 +18,7 @@ public class QueuesPageObjects {
 	private By impCollections = By.linkText("Implementation using collections.deque");
 	private By impArrays = By.linkText("Implementation using array");
 	private By queueOps = By.linkText("Queue Operations");
-	private By tryHereBtn = By.xpath("//a[text() = \"Try here>>>\"]");
+	private By tryhere=By.linkText("Try here>>>");
 	private By queuesTopics = By.cssSelector(".list-group-item");
 	
 	WebDriver driver;
@@ -29,13 +29,15 @@ public class QueuesPageObjects {
 	public String get_Title() {
 		return driver.getTitle();
 	}
-	public void click_Tryhere_btn() {
-		driver.findElement(tryHereBtn).click();
+	public void click_tryhere() {
+		driver.findElement(tryhere).click();
+		System.out.println("Title of new page: "+driver.getTitle());
 	}
-	public void scroll_topicscovered() {
+	
+	public void scroll_topicscovered_click() {
 		Actions action = new Actions(driver);
 		WebElement list = driver.findElement(topics); 
-		action.moveToElement(list);
+		action.moveToElement(list).click().perform();;
 	}
 	
 	public void click_queuesGetStarted() {

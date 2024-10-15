@@ -12,7 +12,7 @@ public class TreesPageObjects {
 
 	private By btnGetStarted = By.xpath("//a[@href =\"tree\" and text() = \"Get Started\"]");
 	private By heading = By.xpath("//h4[text() = \"Tree\"]");
-	private By topicsCovered = By.xpath("//p[text() = \"Topics Covered\"]");
+	private By topicsCovered = By.xpath("//p[text()='Topics Covered']");
 	private By treesTopics = By.cssSelector(".list-group-item");
 	WebDriver driver;
 	
