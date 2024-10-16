@@ -20,8 +20,11 @@ public class Registrationrerun extends capturescreen {
     @Test(testName = "Registration", retryAnalyzer = RerunautomationScript.class,dataProvider ="Registationdatapro",dataProviderClass = DataproviderSupplier.class) 
 	//"User enter credentials and Click Register or Clicks login link"
 	public void Registrationpage(String username,String password,String code,String valIn) throws IOException {
+    	registerpage=testcontextsetup.pageobjectmanager.getRegistrationPage();
     	landingpage.click_getstartbtn();
+    	extentTest.info("navigated to Homepage");
     	registerpage.click_Register();
+    	extentTest.info("navigated to Registerpage");
     	registerpage.enter_username(username);
 		registerpage.enter_password(password);
 		registerpage.enter_confirmpassword(password);
@@ -29,6 +32,7 @@ public class Registrationrerun extends capturescreen {
 		String Actualmessage=registerpage.alert_message();
 		String Expectedmessage="Credentials already exists";
 		Assert.assertEquals(Actualmessage, Expectedmessage);
+		//extentTest.pass("Assertion is passed ");
 		
     }
     @AfterTest

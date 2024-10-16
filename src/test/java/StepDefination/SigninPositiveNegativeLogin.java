@@ -14,20 +14,12 @@ import Utils.ExcelUtil;
 import Utils.TestContextSetup;
 import io.cucumber.java.en.*;
 
-public class SigninPositiveNegativeLogin{
-	TestContextSetup testcontextsetup;
-	landingpageobjects landingpage;
-	Signinpageobjects signinpage;
-	@BeforeMethod
-	public void Beforemethod() throws IOException {
-		testcontextsetup=new TestContextSetup();
-		landingpage=testcontextsetup.pageobjectmanager.getLandingpageobjects();
-		signinpage=testcontextsetup.pageobjectmanager.getSigninpageobjects();
-		landingpage.click_getstartbtn();
-		signinpage.click_signin_link();
-	}
+public class SigninPositiveNegativeLogin extends capturescreen{
+	
 	@Test(dataProvider="Logindata",dataProviderClass = ExcelDataSupplier.class)
 	public void LoginTest(String username,String password,String expected_Result) throws IOException {
+		landingpage.click_getstartbtn();
+		signinpage.click_signin_link();
 		signinpage.enter_username(username, password);
 		signinpage.click_login_btn();
 		String exp_title="NumpyNinja";
