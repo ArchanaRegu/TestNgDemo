@@ -3,16 +3,12 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test1(failed)">
     <classes>
-      <class name="StepDefination.Registrationrerun">
+      <class name="StepDefination.StackStepDefination">
         <methods>
-          <include name="initialiseExtentReports"/>
-          <include name="teardown"/>
-          <include name="generateExtentReports"/>
-          <include name="callingobjects"/>
-          <include name="captureString"/>
-          <include name="Registrationpage" invocation-numbers="0"/>
+          <include name="username_password"/>
+          <include name="invalid_Stackpan" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- StepDefination.Registrationrerun -->
+      </class> <!-- StepDefination.StackStepDefination -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

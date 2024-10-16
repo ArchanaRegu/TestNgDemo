@@ -7,11 +7,12 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import Utils.DataproviderSupplier;
+import Utils.RerunautomationScript;
 
 
 
 public class QueuesStepDefinition extends Parent{
-	@Test(dataProvider = "Topics",dataProviderClass = DataproviderSupplier.class)
+	@Test(dataProvider = "Topics",dataProviderClass = DataproviderSupplier.class,retryAnalyzer = RerunautomationScript.class)
 	public void queues_pane_validcode(String[] QueuesTopic ) throws Exception {
 		queuesPageObjects.click_queuesGetStarted();
 		Assert.assertTrue(queuesPageObjects.displayHeading());

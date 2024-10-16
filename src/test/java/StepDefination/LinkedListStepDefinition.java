@@ -1,48 +1,40 @@
 package StepDefination;
 
-import java.util.List;
-
 import org.testng.Assert;
+import org.testng.annotations.Test;
+import Utils.DataproviderSupplier;
 
-import Pageobjects.LinkedListPageObjects;
-import Utils.TestContextSetup;
-import io.cucumber.datatable.DataTable;
-import io.cucumber.java.en.*;
+public class LinkedListStepDefinition extends Parent {
+	@Test(dataProvider = "LinkedTopics", dataProviderClass = DataproviderSupplier.class)
 
-public class LinkedListStepDefinition {
-	TestContextSetup textContextSetup;
-	LinkedListPageObjects linkedPageObject;
-	
-	public LinkedListStepDefinition(TestContextSetup textContextSetup) {
-		this.textContextSetup = textContextSetup;
-		linkedPageObject = textContextSetup.pageobjectmanager.getLinkedPageObject();
-		
-	}
-	@Then("User navigates to Homepage and Clicks GetStated button of LinkedList pane.")
-	public void user_clicks_get_stated_button_of_linked_list_pane() {
+	public void userClicks_linked_list(String[] LinkedListTopics) throws Exception {
 		linkedPageObject.get_Title();
 		linkedPageObject.click_LinkedgetButton();
 		Assert.assertTrue(linkedPageObject.displayHeading());
-
-	}
-	 @Given("User is in LinkedList page.")
-	 public void LinkedListpage() {
-		 linkedPageObject.get_Title();
-	 }
-
-	@Then("LinkedList page is displayed with Topics covered.")
-	public void linked_list_page_is_displayed_with_topics_covered(DataTable LinkedList_topics) {
-		List<String>Expected_list=LinkedList_topics.asList();
-	    System.out.println("expected list: "+Expected_list);
-	    System.out.println("actaual list:"+linkedPageObject.topics_displayed());
-	    Assert.assertEquals(linkedPageObject.topics_displayed(),Expected_list);
-	}
-
-	@Given("User clicks {string}")
-	public void user_clicks(String string) {
-		linkedPageObject.user_clicks(string);
-	}
-
+		linkedPageObject.get_Title();
+		System.out.println("actaual list:" + linkedPageObject.topics_displayed());
+		linkedPageObject.user_clicks(LinkedListTopics[7]);
+		linkedPageObject.get_Title();
+		queuesPageObjects.click_tryhere();
+		String validcode=excelnew.getData(1, 2);
+		datastructpage.enter_valideditor(validcode);
+		System.out.println(datastructpage.Output());
+		testcontextsetup.testbase.WebDriverManager().quit();
+	}		
 	
-
+	@Test(dataProvider = "LinkedTopics",dataProviderClass = DataproviderSupplier.class)
+	public void invalid_linked_list(String[] LinkedListTopics) throws Exception {
+		linkedPageObject.get_Title();
+		linkedPageObject.click_LinkedgetButton();
+		Assert.assertTrue(linkedPageObject.displayHeading());
+		linkedPageObject.get_Title();
+		System.out.println("actaual list:" + linkedPageObject.topics_displayed());
+		linkedPageObject.user_clicks(LinkedListTopics[7]);
+		linkedPageObject.get_Title();
+		queuesPageObjects.click_tryhere();
+		String Invalidcode=excelnew.getData(1, 3);
+		datastructpage.enter_valideditor(Invalidcode);
+		System.out.println(datastructpage.Output());
+		testcontextsetup.testbase.WebDriverManager().quit();
+	    }
 }

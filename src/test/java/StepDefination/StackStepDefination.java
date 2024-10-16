@@ -1,36 +1,49 @@
 package StepDefination;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import Pageobjects.StackPageobjects;
+import Utils.DataproviderSupplier;
 import Utils.TestContextSetup;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.*;
 
-public class StackStepDefination {
-	TestContextSetup testcontestsetup;
-	StackPageobjects stackpageobjects;
-public StackStepDefination(TestContextSetup testcontestsetup) {
-	this.testcontestsetup=testcontestsetup;
-	this.stackpageobjects=testcontestsetup.pageobjectmanager.getStackpageobjects();
+public class StackStepDefination extends Parent {
+	@Test(dataProvider = "StacksTopics", dataProviderClass = DataproviderSupplier.class)
+	public void Valid_Stackpane(String[] sTopics) throws Exception {
+		stackPageObjects.get_title();
+		stackPageObjects.click_stack_pane();
+		Assert.assertTrue(stackPageObjects.display_topic_cover());	
+		stackPageObjects.get_title();
+		System.out.println(sTopics[9]);
+		stackPageObjects.user_clicks(sTopics[9]);
+		
+		stackPageObjects.get_title();
+		queuesPageObjects.click_tryhere();
+		String validcode=excelnew.getData(1, 2);
+		datastructpage.enter_valideditor(validcode);
+		System.out.println(datastructpage.Output());
+		testcontextsetup.testbase.WebDriverManager().quit();		
 	
-}
-@Then("User navigates to Homepage and Clicks GetStated button of Stack pane.")
-public void user_clicks_get_started_buttonStackpane() {
-stackpageobjects.get_title();
-stackpageobjects.click_stack_pane();
-Assert.assertTrue(stackpageobjects.display_topic_cover());
-}
-@Given("User is in Stack Page.")
-public void Stackpage() {
-	stackpageobjects.get_title();
-}
-@Then("Stacks page is displayed with Topics covered.")
-public void stack_information_is_displayed(DataTable dataTable) {
-	List<String>Expected_list=dataTable.asList();
-	System.out.println(Expected_list);
-	Assert.assertEquals(Expected_list, stackpageobjects.alltopics());
-}
+	}
+	
+	@Test(dataProvider = "StacksTopics",dataProviderClass = DataproviderSupplier.class)
+	public void invalid_Stackpan(String[] sTopics) throws Exception {
+		stackPageObjects.get_title();
+		stackPageObjects.click_stack_pane();
+		Assert.assertTrue(stackPageObjects.display_topic_cover());
+		stackPageObjects.get_title();
+		System.out.println(sTopics[9]);
+		stackPageObjects.user_clicks(sTopics[9]);
+		stackPageObjects.get_title();
+		queuesPageObjects.click_tryhere();
+		String Invalidcode=excelnew.getData(1, 3);
+		datastructpage.enter_valideditor(Invalidcode);
+		System.out.println(datastructpage.Output());
+		testcontextsetup.testbase.WebDriverManager().quit();
+	    }
 }

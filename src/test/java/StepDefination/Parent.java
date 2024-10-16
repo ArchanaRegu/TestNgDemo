@@ -20,8 +20,11 @@ import org.testng.annotations.Test;
 import Pageobjects.ArraysDocPageObjects;
 import Pageobjects.DataStructPage;
 import Pageobjects.GraphsPageObjects;
+import Pageobjects.LinkedListPageObjects;
 import Pageobjects.QueuesPageObjects;
 import Pageobjects.Signinpageobjects;
+import Pageobjects.StackPageobjects;
+import Pageobjects.TreesPageObjects;
 import Pageobjects.landingpageobjects;
 import Utils.ExcelDataprovider;
 import Utils.TestContextSetup;
@@ -29,7 +32,7 @@ import io.cucumber.java.Scenario;
 import io.qameta.allure.Allure;
 
 public class Parent {
-	
+
 	WebDriver driver;
 	TestContextSetup testcontextsetup;
 	landingpageobjects landingpage;
@@ -39,43 +42,35 @@ public class Parent {
 	ArraysDocPageObjects arraysdocpage;
 	GraphsPageObjects graphsPageObjects;
 	QueuesPageObjects queuesPageObjects;
+	LinkedListPageObjects linkedPageObject;
+	StackPageobjects stackPageObjects;
+	TreesPageObjects treePageObjects;
+	
+
 	@BeforeMethod
 	@Test
 	public void username_password() throws IOException {
-	testcontextsetup=new TestContextSetup();
-	landingpage=testcontextsetup.pageobjectmanager.getLandingpageobjects();
-	signinpage=testcontextsetup.pageobjectmanager.getSigninpageobjects();
-	datastructpage=testcontextsetup.pageobjectmanager.getDataStructPage();
-	arraysdocpage=testcontextsetup.pageobjectmanager.getArrayDocPage();
-	graphsPageObjects = testcontextsetup.pageobjectmanager.getGraphsPageObjects();
-	queuesPageObjects = testcontextsetup.pageobjectmanager.getQueuesPageObject();
-	excelnew=new ExcelDataprovider();
-	System.out.println(testcontextsetup.testbase.WebDriverManager().getTitle()+" from BeforeTest");
-	Assert.assertTrue(landingpage.h1_ptag_getstarted());
-	landingpage.click_getstartbtn();
-	Assert.assertTrue(signinpage.regis_sign());
-	System.out.println(signinpage.datastructure()+" is displayed");
-	signinpage.click_signin_link();
-	System.out.println("This is Beforeclass");
-	String Username=excelnew.getData(1, 0);
-	String Password=excelnew.getData(1, 1);
-	signinpage.enter_username(Username, Password);
-	signinpage.click_login_btn();
-	
-}
-	@BeforeSuite
-	public void BeforeSuite() throws IOException {
-	System.out.println("This is Before Suite");
-		}
-	@BeforeTest
-	public void BeforeScenario1() throws IOException {
-		System.out.println("This is in Before Test");
-		
-			}
-	
-	
+		testcontextsetup = new TestContextSetup(); // browser initiation
+		landingpage = testcontextsetup.pageobjectmanager.getLandingpageobjects(); // object creation for page objects
+		signinpage = testcontextsetup.pageobjectmanager.getSigninpageobjects();
+		datastructpage = testcontextsetup.pageobjectmanager.getDataStructPage();
+		arraysdocpage = testcontextsetup.pageobjectmanager.getArrayDocPage();
+		graphsPageObjects = testcontextsetup.pageobjectmanager.getGraphsPageObjects();
+		queuesPageObjects = testcontextsetup.pageobjectmanager.getQueuesPageObject();
+		linkedPageObject = testcontextsetup.pageobjectmanager.getLinkedPageObject();
+		stackPageObjects = testcontextsetup.pageobjectmanager.getStackpageobjects();
+		treePageObjects = testcontextsetup.pageobjectmanager.getTreesPageObjects();
+		excelnew = new ExcelDataprovider(); // test data
+		System.out.println(testcontextsetup.testbase.WebDriverManager().getTitle() + " from BeforeTest");
+		Assert.assertTrue(landingpage.h1_ptag_getstarted());
+		landingpage.click_getstartbtn();
+		Assert.assertTrue(signinpage.regis_sign());		
+		signinpage.click_signin_link();		
+		String Username = excelnew.getData(1, 0);
+		String Password = excelnew.getData(1, 1);
+		signinpage.enter_username(Username, Password);
+		signinpage.click_login_btn();
+
 	}
-	
 
-	
-
+}

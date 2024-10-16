@@ -1,43 +1,54 @@
 package StepDefination;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import Pageobjects.TreesPageObjects;
+import Utils.DataproviderSupplier;
 import Utils.TestContextSetup;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class TreesStepDefinition {
-	TestContextSetup textContextSetup;
-	TreesPageObjects treesPageObjects;	
+public class TreesStepDefinition extends Parent {
+	@Test(dataProvider = "TreesTopics", dataProviderClass = DataproviderSupplier.class)	
+	public void valid_trees_pane(String[] treesTopics) throws Exception {		
 	
-	public TreesStepDefinition(TestContextSetup textContextSetup) {
-		this.textContextSetup = textContextSetup;
-		treesPageObjects = textContextSetup.pageobjectmanager.getTreesPageObjects();
+		treePageObjects.click_TreesgetButton();
+		Assert.assertTrue(treePageObjects.displayHeading());		
+			treePageObjects.get_title();
+			System.out.println(treesTopics[8]);
+			treePageObjects.user_clicks(treesTopics[8]);			
+			treePageObjects.get_title();
+			queuesPageObjects.click_tryhere();
+			String validcode=excelnew.getData(1, 2);
+			datastructpage.enter_valideditor(validcode);
+			System.out.println(datastructpage.Output());
+			testcontextsetup.testbase.WebDriverManager().quit();		
 		
-	}
-	 @Then("User navigates to Homepage and Clicks GetStated button of Trees pane.")
-	public void user_clicks_get_stated_button_of_trees_pane() {
-		treesPageObjects.click_TreesgetButton();
-		Assert.assertTrue(treesPageObjects.displayHeading());
+		}
+		
+		@Test(dataProvider = "TreesTopics",dataProviderClass = DataproviderSupplier.class)
+		public void invalid_trees_pane(String[] treesTopics) throws Exception {
+			treePageObjects.click_TreesgetButton();
+			Assert.assertTrue(treePageObjects.displayHeading());		
+				treePageObjects.get_title();
+				System.out.println(treesTopics[8]);
+				treePageObjects.user_clicks(treesTopics[8]);			
+				treePageObjects.get_title();
+				queuesPageObjects.click_tryhere();
+				String Invalidcode=excelnew.getData(1, 3);
+				datastructpage.enter_valideditor(Invalidcode);
+				System.out.println(datastructpage.Output());
+				testcontextsetup.testbase.WebDriverManager().quit();
+	 
+		}
+			
 	    
-	}
-	 @Given("User is in Tree Page.")
-	 public void Treepage() {
-		 treesPageObjects.get_title();
-	 }
-
-	@Then("Trees page is displayed with Topics covered.")
-	public void trees_page_is_displayed_with_topics_covered(DataTable dataTable) {		
-		List<String>Expected_list= dataTable.asList();
-	    System.out.println("expected list: "+Expected_list);
-	    System.out.println("actaual list:"+ treesPageObjects.topics_displayed());
-	    Assert.assertEquals(treesPageObjects.topics_displayed(), Expected_list);		
-	    
-	}
+	
 
 }
