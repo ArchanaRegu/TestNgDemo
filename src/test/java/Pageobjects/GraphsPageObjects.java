@@ -17,7 +17,7 @@ public class GraphsPageObjects {
 	private By topics = By.xpath("//p[text()= 'Topics Covered']");
 	private By graphsLink = By.linkText("Graph");
 	private By graphsRepLink = By.linkText("Graph Representations");
-	private By btnTryhere = By.xpath("//a[text() = \"Try here>>>\"]");
+	private By tryhere = By.xpath("//a[text() = \"Try here>>>\"]");
 	private By btnRun = By.xpath("//button[text() = \"Run\"]");
 	private By graphTopics = By.cssSelector(".list-group-item");
 	
@@ -37,6 +37,9 @@ public class GraphsPageObjects {
 		driver.findElement(btnGetStarted).click();
 		System.out.println("Graphs Get started is clicked with title : " + driver.getTitle());		
 		
+	}
+	public void click_Tryhere_btn() {
+		driver.findElement(tryhere).click();
 	}
 	public String get_Title() {
 		return driver.getTitle();

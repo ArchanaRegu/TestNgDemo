@@ -23,7 +23,7 @@ public class GraphsStepDefinition extends Parent {
 	    String graphTopics="Graph";
 	    graphsPageObjects.clickGraphsListLinks(graphTopics);
 	    String title= graphsPageObjects.get_Title();
-	    arraysdocpage.click_Tryhere_btn();
+	    graphsPageObjects.click_Tryhere_btn();
 		//User Enters valid code in editorpage
 	    System.out.println(title+": "+validinvalid+"code ="+code);
 		datastructpage.enter_valideditor(code);

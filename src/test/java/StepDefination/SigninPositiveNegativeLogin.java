@@ -19,9 +19,12 @@ public class SigninPositiveNegativeLogin extends capturescreen{
 	@Test(dataProvider="Logindata",dataProviderClass = ExcelDataSupplier.class)
 	public void LoginTest(String username,String password,String expected_Result) throws IOException {
 		landingpage.click_getstartbtn();
+		extentTest.info("navigated to Homepage");
 		signinpage.click_signin_link();
+		extentTest.info("navigated to Signinpage");
 		signinpage.enter_username(username, password);
 		signinpage.click_login_btn();
+		extentTest.info("check whether it is navigated to Homepage");
 		String exp_title="NumpyNinja";
 		String act_title=landingpage.get_Title();
 		if(expected_Result.equals("Valid")) {

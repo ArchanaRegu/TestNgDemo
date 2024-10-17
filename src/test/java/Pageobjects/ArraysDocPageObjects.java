@@ -18,7 +18,7 @@ private By Arrays_in_python=By.linkText("Arrays in Python");
 private By Arrays_Use_List=By.linkText("Arrays Using List");
 private By BasicOperations_Lists=By.linkText("Basic Operations in Lists");
 private By ApplicationsOfArray=By.linkText("Applications of Array");
-private By tryhere=By.xpath("//p[text()='Topics Covered']");
+private By tryhere=By.linkText("Try here>>>");
 public ArraysDocPageObjects(WebDriver driver) {
 	this.driver=driver;
 	

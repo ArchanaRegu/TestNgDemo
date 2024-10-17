@@ -39,6 +39,7 @@ public class Parent {
 	ArraysDocPageObjects arraysdocpage;
 	GraphsPageObjects graphsPageObjects;
 	QueuesPageObjects queuesPageObjects;
+	//public static ThreadLocal<WebDriver>tdriver=new ThreadLocal<WebDriver>();
 	@BeforeMethod
 	@Test
 	public void username_password() throws IOException {
