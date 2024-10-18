@@ -1,19 +1,12 @@
 package StepDefination;
 
 import java.io.IOException;
-
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import Pageobjects.RegistrationPage;
-import Pageobjects.Signinpageobjects;
-import Pageobjects.landingpageobjects;
 import Utils.DataproviderSupplier;
 import Utils.RerunautomationScript;
-import Utils.TestContextSetup;
+
 
 public class Registrationrerun extends capturescreen {
 		

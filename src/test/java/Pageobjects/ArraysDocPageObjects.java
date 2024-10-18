@@ -28,6 +28,9 @@ public void scroll_topicscovered() {
 	WebElement list = driver.findElement(topics_cov); 
 	action.moveToElement(list);
 }
+public String get_Title() {
+	return driver.getTitle();
+}
 public void click_getstarted() {
 	driver.findElement(Array_getstart).click();
 }

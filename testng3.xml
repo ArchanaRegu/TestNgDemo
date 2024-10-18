@@ -4,16 +4,12 @@
 	
 	 <test name="Test1">
     <classes>
-      <class name="StepDefination.Registrationrerun"/>
+      <class name="StepDefination.QueuesFile"/>
       <!-- <methods><include name="Registration"></include></methods>-->
       <!--<class name="StepDefination.SigninPositiveNegativeLogin"/>-->
       </classes>
   </test> 
    
-  <test name="Test2">
-    <classes>
-      <class name="StepDefination.SigninPositiveNegativeLogin"/>
-      </classes>
-  </test>
+  
   <!-- Test -->
 </suite> <!-- Suite -->

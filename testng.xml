@@ -4,27 +4,27 @@
 	
 	 <test name="Test1">
     <classes>
-      <class name="StepDefination.HomepageStepDefination"/>
+      <class name=""/>
       </classes>
   </test> 
    
   <test name="Test2" parallel="classes" thread-count="4">
 	    <classes>
-      <class name="StepDefination.DataStructureStepDefination"/>
-      <class name="StepDefination.GraphsStepDefinition"/>
-       <class name="StepDefination.ArraysDocPageStepDefination"/>
-       <class name="StepDefination.QueuesStepDefinition"/>
+      <class name=""/>
+      <class name=""/>
+       <class name=""/>
+       <class name=""/>
       </classes>
   </test>
    
    <test name="Test3">
     <classes>
-      <class name="StepDefination.RegistratnStepDefination"/>
+      <class name=""/>
       </classes>
   </test> 
    <test name="Test6">
     <classes>
-      <class name="StepDefination.SigninPositiveNegativeLogin"/>
+      <class name=""/>
       </classes>
   </test> 
   <!-- Test -->
