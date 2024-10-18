@@ -40,7 +40,7 @@ public class QueuesFile extends Parent{
 		System.out.println(datastructpage.Output());
 		testcontextsetup.testbase.WebDriverManager().quit();
 	    }
-	@Test(dataProvider = "Topics",dataProviderClass = DataproviderSupplier.class)
+	@Test(dataProvider = "QueuesTopics",dataProviderClass = DataproviderSupplier.class)
 	public void queues_paneIn(String QueuesTopic) throws Exception {
 		queuesPageObjects.click_queuesGetStarted();
 		extentTest.info("navigated to Queue's page");
