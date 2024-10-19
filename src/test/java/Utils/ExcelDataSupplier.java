@@ -33,6 +33,26 @@ public class ExcelDataSupplier {
 //	}
 	return data;
 	}
+	@DataProvider(name="QueuesTopics",indices = {0,1,2,3})
+	public String[][] getdata() throws Exception {
+		File excelFile=new File("./src/test/resources/excel/Testdata.xlsx");
+		FileInputStream fis=new FileInputStream(excelFile);
+		XSSFWorkbook workbook=new XSSFWorkbook(fis);
+		XSSFSheet sheet=workbook.getSheet("Sheet1");
+		int no_rows=sheet.getPhysicalNumberOfRows();
+		int no_colms=sheet.getRow(0).getPhysicalNumberOfCells();
+		String[][] data=new String[no_rows-1][no_colms];
+		for(int i=0;i<no_rows-1;i++) {
+			for(int j=0;j<no_colms;j++) {
+				DataFormatter df=new DataFormatter();
+				data[i][j]=df.formatCellValue(sheet.getRow(i+1).getCell(j));
+			}
+		}
+		workbook.close();
+		fis.close();
+
+	return data;
+	}
 	
 	}
 

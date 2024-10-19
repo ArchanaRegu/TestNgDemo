@@ -4,7 +4,7 @@
 	
 	 <test name="Test1">
     <classes>
-      <class name="StepDefination.QueuesFile"/>
+      <class name="StepDefination.StackClassFile"/>
       <!-- <methods><include name="Registration"></include></methods>-->
       <!--<class name="StepDefination.SigninPositiveNegativeLogin"/>-->
       </classes>
