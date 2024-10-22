@@ -1,4 +1,4 @@
-package StepDefination;
+package TestClasses;
 
 import org.testng.annotations.Test;
 

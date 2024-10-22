@@ -1,4 +1,4 @@
-package StepDefination;
+package TestClasses;
 import java.awt.Desktop;
 import java.io.ByteArrayInputStream;
 import java.io.File;

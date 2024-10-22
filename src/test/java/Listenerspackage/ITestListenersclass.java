@@ -9,8 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import TestClasses.Parent;
 import Utils.TestContextSetup;
-import StepDefination.Parent;
 import io.qameta.allure.Allure;
 
 public class ITestListenersclass extends Parent implements ITestListener {
