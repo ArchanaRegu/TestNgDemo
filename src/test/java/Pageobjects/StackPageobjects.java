@@ -60,5 +60,8 @@ public class StackPageobjects {
 		return all_topics_text;
 	}
 
-	
+	public void click_LinkedgetButton() {
+		// TODO Auto-generated method stub
+		
+	}
 }

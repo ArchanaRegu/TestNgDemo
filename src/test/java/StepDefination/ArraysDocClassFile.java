@@ -7,7 +7,7 @@ import Utils.DataproviderSupplier;
 //@Listeners(ITestListenersclass.class)
 public class ArraysDocClassFile extends Parent{
 	@Test(dataProvider = "Arraysdatapro",dataProviderClass = DataproviderSupplier.class)
-	public void Array_valid(String ArraysTopicLink) throws Exception {
+	public void usingDp(String ArraysTopicLink) throws Exception {
 		arraysdocpage.click_getstarted();
 		extentTest.info("navigated to Arrays's page");
 	    System.out.println("actaual list:"+arraysdocpage.List_arraysTopics());
@@ -26,9 +26,8 @@ public class ArraysDocClassFile extends Parent{
 	
 
 	@Test(dataProvider = "Arraysdatapro",dataProviderClass = DataproviderSupplier.class)
-	public void Array_invalid(String ArraysTopicLink) throws Exception {
+	public void Arraypage(String ArraysTopicLink) throws Exception {
 		arraysdocpage.click_getstarted();
-		extentTest.info("navigated to Arrays's page");
 	    System.out.println("actaual list:"+arraysdocpage.List_arraysTopics());
 	    System.out.println(ArraysTopicLink+" This link ");
 		arraysdocpage.clickPaneListLinks(ArraysTopicLink);
