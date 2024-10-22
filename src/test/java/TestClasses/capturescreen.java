@@ -1,6 +1,7 @@
 package TestClasses;
 
 import java.awt.Desktop;
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.lang.reflect.Method;
 import org.apache.commons.io.FileUtils;
@@ -21,6 +22,7 @@ import Pageobjects.RegistrationPage;
 import Pageobjects.Signinpageobjects;
 import Pageobjects.landingpageobjects;
 import Utils.TestContextSetup;
+import io.qameta.allure.Allure;
 
 public class capturescreen {
 	TestContextSetup testcontextsetup;
@@ -59,6 +61,7 @@ public class capturescreen {
 		Desktop.getDesktop().browse(new File("AllTests.html").toURI());
 		Desktop.getDesktop().browse(new File("FailedTests.html").toURI());
 	}
+
 @AfterMethod
 public void captureString(Method m,ITestResult result) throws Exception {
 	if(result.getStatus()==ITestResult.FAILURE) {
@@ -66,11 +69,12 @@ public void captureString(Method m,ITestResult result) throws Exception {
 	    screenshotpath=captureScreenshot(result.getMethod().getMethodName()+".jpg");
 	    extentTest.addScreenCaptureFromPath(screenshotpath);
 	    extentTest.fail(result.getThrowable());
+	    byte[] screenshot=((TakesScreenshot)testcontextsetup.testbase.WebDriverManager()).getScreenshotAs(OutputType.BYTES);
+		Allure.addAttachment("Failed Screenshot",new ByteArrayInputStream(screenshot));
 	    
 	}else if(result.getStatus()==ITestResult.SUCCESS) {
 		extentTest.pass(m.getName()+" is passed");
 	}
-	
 	
 	}
 

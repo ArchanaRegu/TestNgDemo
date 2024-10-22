@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="4" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="4" parallel="tests" name="Test6(failed)">
+  <test thread-count="4" parallel="tests" name="Test10(failed)">
     <classes>
-      <class name="StepDefination.QueuesFile">
+      <class name="TestClasses.RegistrationClassFile">
         <methods>
-          <include name="initialiseExtentReports"/>
-          <include name="queues_paneIn"/>
-          <include name="generateExtentReports"/>
-          <include name="captureString"/>
           <include name="callingobjects"/>
+          <include name="initialiseExtentReports"/>
+          <include name="click_registration_link_and_user_is_in_registration_page"/>
+          <include name="generateExtentReports"/>
+          <include name="user_enter_credentials" invocation-numbers="0"/>
+          <include name="clickRegisterbtn"/>
+          <include name="captureString"/>
         </methods>
-      </class> <!-- StepDefination.QueuesFile -->
+      </class> <!-- TestClasses.RegistrationClassFile -->
     </classes>
-  </test> <!-- Test6(failed) -->
+  </test> <!-- Test10(failed) -->
+  <test thread-count="4" parallel="tests" name="Test11(failed)">
+    <classes>
+      <class name="TestClasses.Registrationrerun">
+        <methods>
+          <include name="callingobjects"/>
+          <include name="initialiseExtentReports"/>
+          <include name="teardown"/>
+          <include name="generateExtentReports"/>
+          <include name="Registrationpage" invocation-numbers="0"/>
+          <include name="captureString"/>
+        </methods>
+      </class> <!-- TestClasses.Registrationrerun -->
+    </classes>
+  </test> <!-- Test11(failed) -->
 </suite> <!-- Failed suite [Suite] -->

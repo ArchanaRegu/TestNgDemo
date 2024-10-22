@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test6</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Oct 18 12:27:23 CDT 2024</td>
+<td>Started on:</td><td>Tue Oct 22 13:56:09 CDT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>71 seconds (71781 ms)</td>
+<tr><td>Total time:</td><td>182 seconds (182240 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,49 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='StepDefination.QueuesFile.queues_paneIn()'><b>queues_paneIn</b><br>Test class: StepDefination.QueuesFile</td>
-<td><div><pre>org.testng.TestNGException: 
-Method public void StepDefination.QueuesFile.queues_paneIn(java.lang.String) throws java.lang.Exception requires a @DataProvider named : Topics in class Utils.DataproviderSupplier
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1829933074", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1829933074'><pre>org.testng.TestNGException: 
-Method public void StepDefination.QueuesFile.queues_paneIn(java.lang.String) throws java.lang.Exception requires a @DataProvider named : Topics in class Utils.DataproviderSupplier
-	at org.testng.internal.Parameters.findDataProvider(Parameters.java:532)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:946)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>0</td>
-<td>StepDefination.QueuesFile@2e32ccc5</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -119,25 +76,45 @@ Method public void StepDefination.QueuesFile.queues_paneIn(java.lang.String) thr
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='StepDefination.QueuesFile.queues_pane_validcode()'><b>queues_pane_validcode</b><br>Test class: StepDefination.QueuesFile<br>Test method: Verify Queuepane on DsAlgo<br>Parameters: Implementation using collections.deque</td>
+<td title='TestClasses.QueuesFile.queues_pane_validcode()'><b>queues_pane_validcode</b><br>Test class: TestClasses.QueuesFile<br>Test method: Verify Queuepane on DsAlgo<br>Parameters: Implementation using array</td>
 <td></td>
-<td>15</td>
-<td>StepDefination.QueuesFile@2e32ccc5</td></tr>
+<td>22</td>
+<td>TestClasses.QueuesFile@2e32ccc5</td></tr>
 <tr>
-<td title='StepDefination.QueuesFile.queues_pane_validcode()'><b>queues_pane_validcode</b><br>Test class: StepDefination.QueuesFile<br>Test method: Verify Queuepane on DsAlgo<br>Parameters: Implementation of Queue in Python</td>
+<td title='TestClasses.QueuesFile.queues_paneIn()'><b>queues_paneIn</b><br>Test class: TestClasses.QueuesFile<br>Parameters: Implementation using collections.deque</td>
+<td></td>
+<td>14</td>
+<td>TestClasses.QueuesFile@2e32ccc5</td></tr>
+<tr>
+<td title='TestClasses.QueuesFile.queues_pane_validcode()'><b>queues_pane_validcode</b><br>Test class: TestClasses.QueuesFile<br>Test method: Verify Queuepane on DsAlgo<br>Parameters: Implementation of Queue in Python</td>
+<td></td>
+<td>17</td>
+<td>TestClasses.QueuesFile@2e32ccc5</td></tr>
+<tr>
+<td title='TestClasses.QueuesFile.queues_pane_validcode()'><b>queues_pane_validcode</b><br>Test class: TestClasses.QueuesFile<br>Test method: Verify Queuepane on DsAlgo<br>Parameters: Implementation using collections.deque</td>
+<td></td>
+<td>4</td>
+<td>TestClasses.QueuesFile@2e32ccc5</td></tr>
+<tr>
+<td title='TestClasses.QueuesFile.queues_pane_validcode()'><b>queues_pane_validcode</b><br>Test class: TestClasses.QueuesFile<br>Test method: Verify Queuepane on DsAlgo<br>Parameters: Queue Operations</td>
+<td></td>
+<td>4</td>
+<td>TestClasses.QueuesFile@2e32ccc5</td></tr>
+<tr>
+<td title='TestClasses.QueuesFile.queues_paneIn()'><b>queues_paneIn</b><br>Test class: TestClasses.QueuesFile<br>Parameters: Implementation using array</td>
 <td></td>
 <td>6</td>
-<td>StepDefination.QueuesFile@2e32ccc5</td></tr>
+<td>TestClasses.QueuesFile@2e32ccc5</td></tr>
 <tr>
-<td title='StepDefination.QueuesFile.queues_pane_validcode()'><b>queues_pane_validcode</b><br>Test class: StepDefination.QueuesFile<br>Test method: Verify Queuepane on DsAlgo<br>Parameters: Implementation using array</td>
+<td title='TestClasses.QueuesFile.queues_paneIn()'><b>queues_paneIn</b><br>Test class: TestClasses.QueuesFile<br>Parameters: Queue Operations</td>
 <td></td>
-<td>13</td>
-<td>StepDefination.QueuesFile@2e32ccc5</td></tr>
+<td>21</td>
+<td>TestClasses.QueuesFile@2e32ccc5</td></tr>
 <tr>
-<td title='StepDefination.QueuesFile.queues_pane_validcode()'><b>queues_pane_validcode</b><br>Test class: StepDefination.QueuesFile<br>Test method: Verify Queuepane on DsAlgo<br>Parameters: Queue Operations</td>
+<td title='TestClasses.QueuesFile.queues_paneIn()'><b>queues_paneIn</b><br>Test class: TestClasses.QueuesFile<br>Parameters: Implementation of Queue in Python</td>
 <td></td>
-<td>3</td>
-<td>StepDefination.QueuesFile@2e32ccc5</td></tr>
+<td>21</td>
+<td>TestClasses.QueuesFile@2e32ccc5</td></tr>
 </table><p>
 </body>
 </html>

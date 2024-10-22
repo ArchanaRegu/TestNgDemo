@@ -49,6 +49,15 @@
       <class name="TestClasses.SigninPositiveNegativeLogin"/>
       </classes>
   </test> 
-  
+  <test name="Test10">
+    <classes>
+      <class name="TestClasses.RegistrationClassFile"/>
+      </classes>
+  </test>
+  <test name="Test11">
+    <classes>
+      <class name="TestClasses.Registrationrerun"/>
+      </classes>
+  </test>
   <!-- Test -->
 </suite> <!-- Suite -->
