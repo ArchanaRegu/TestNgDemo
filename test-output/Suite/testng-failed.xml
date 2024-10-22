@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test1(failed)">
+<suite thread-count="4" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="tests" name="Test6(failed)">
     <classes>
-      <class name="StepDefination.StackClassFile">
+      <class name="StepDefination.QueuesFile">
         <methods>
           <include name="initialiseExtentReports"/>
+          <include name="queues_paneIn"/>
           <include name="generateExtentReports"/>
           <include name="captureString"/>
-          <include name="invalid_Stackpan"/>
           <include name="callingobjects"/>
-          <include name="Valid_Stackpane" invocation-numbers="0"/>
         </methods>
-      </class> <!-- StepDefination.StackClassFile -->
+      </class> <!-- StepDefination.QueuesFile -->
     </classes>
-  </test> <!-- Test1(failed) -->
+  </test> <!-- Test6(failed) -->
 </suite> <!-- Failed suite [Suite] -->

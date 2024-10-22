@@ -10,9 +10,8 @@ import Utils.RerunautomationScript;
 
 public class Registrationrerun extends capturescreen {
 		
-    @Test(testName = "Registration", retryAnalyzer = RerunautomationScript.class,
-    		dataProvider ="Registationdatapro",
-    		dataProviderClass = DataproviderSupplier.class) 
+    @Test(testName = "Registration", retryAnalyzer = RerunautomationScript.class,dataProvider ="Registationdatapro",dataProviderClass = DataproviderSupplier.class) 
+	//"User enter credentials and Click Register or Clicks login link"
 	public void Registrationpage(String username,String password,String code,String valIn) throws IOException {
     	registerpage=testcontextsetup.pageobjectmanager.getRegistrationPage();
     	landingpage.click_getstartbtn();
